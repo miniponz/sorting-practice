@@ -1,7 +1,7 @@
-const fruit = ['apples', 'bananas', 'grapes'];
-const veggies = ['cucumber', 'tomato', 'onions'];
-const numbers = [3, 2, 1];
-const sortButton = document.getElementById('sort-button');
+const fruit = ['pears', 'apples', 'bananas', 'grapes'];
+const veggies = ['cucumber', 'tomato', 'onions', 'broccoli'];
+const numbers = [9, 1, 7, 3, 10, 2, 5, 4, 8, 6];
+
 const dataDisplay = document.getElementById('data-display');
 
 const fruitDisplay = document.getElementById('fruit');
