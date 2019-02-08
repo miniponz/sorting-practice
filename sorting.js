@@ -4,14 +4,22 @@ const numbers = [3, 2, 1];
 const sortButton = document.getElementById('sort-button');
 const dataDisplay = document.getElementById('data-display');
 
+const fruitDisplay = document.getElementById('fruit');
+const veggieDisplay = document.getElementById('veggies');
+const numberDisplay = document.getElementById('numbers');
+
+fruitDisplay.textContent = fruit.join(', ');
+veggieDisplay.textContent = veggies.join(', ');
+numberDisplay.textContent = numbers.join(', ');
+
 dataDisplay.addEventListener('submit', function(event){
     event.preventDefault();
     fruit.sort();
-    document.getElementById('fruit').textContent = fruit.join(', ');
+    fruitDisplay.textContent = fruit.join(', ');
     veggies.sort();
-    document.getElementById('veggies').textContent = veggies.join(', ');
+    veggieDisplay.textContent = veggies.join(', ');
     numbers.sort();
-    document.getElementById('numbers').textContent = numbers.join(', ');
+    numberDisplay.textContent = numbers.join(', ');
 
 });
 
@@ -21,5 +29,3 @@ dataDisplay.addEventListener('submit', function(event){
 
 
 
-
-console.log(veggies, fruit, numbers);
