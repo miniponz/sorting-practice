@@ -8,6 +8,10 @@ dataDisplay.addEventListener('submit', function(event){
     event.preventDefault();
     fruit.sort();
     document.getElementById('fruit').textContent = fruit.join(', ');
+    veggies.sort();
+    document.getElementById('veggies').textContent = veggies.join(', ');
+    numbers.sort();
+    document.getElementById('numbers').textContent = numbers.join(', ');
 
 });
 
